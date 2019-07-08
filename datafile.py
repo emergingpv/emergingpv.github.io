@@ -4,16 +4,9 @@ from bokeh.layouts import row, column
 from bokeh.models import Select
 from bokeh.palettes import Spectral5
 from bokeh.plotting import curdoc, figure
-#from pandas import ExcelWriter
-#from pandas import ExcelFile
-#from bokeh.sampledata.autompg import autompg_clean as df
 
-#df = df.copy()
-#df = pd.read_excel("noncertifiedsinglecells.xlsx", sheet_name = 'Sheet1')
 csv_file='datafile.csv'
 df=pd.read_csv(csv_file)
-
-#df.head()
 
 SIZES = list(range(6, 22, 3))
 COLORS = Spectral5
