@@ -13,10 +13,7 @@ COLORS = Spectral5
 N_SIZES = len(SIZES)
 N_COLORS = len(COLORS)
 
-# data cleanup
-#df.Vic = df.cyl.astype(str)
-#df.yr = df.yr.astype(str)
-#del df['name']
+
 
 columns = sorted(df.columns)
 discrete = [x for x in columns if df[x].dtype == object]
